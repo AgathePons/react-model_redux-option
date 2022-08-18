@@ -1,10 +1,16 @@
 // == Import : npm
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
 // == Import : local
 import App from 'src/containers/AppContainer';
+import store from './store/store';
 
 // == Render
-const rootReactElement = <App />;
+const rootReactElement = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 const target = document.getElementById('root');
 render(rootReactElement, target);
