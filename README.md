@@ -1,3 +1,3 @@
 # React model
 
-Template React
+Template React without Redux
